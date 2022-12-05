@@ -52,39 +52,17 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          <li><a class="nav-link scrollto" href="#about">Datasets & Models</a></li>
+          <li><a class="nav-link scrollto" href="#SPLADE">SPLADE</a></li>
+          <li><a class="nav-link scrollto " href="#ColBERT">ColBERT</a></li>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
+    <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Neural Information Retrieval </h1>
-      <h2>We work towards Effective and Efficiency</h2>
+      <h2>Improving the Efficiency and Effectiveness of Information Retrieval Systems</h2>
       <a href="#team" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero Section -->
@@ -170,113 +148,114 @@
 
       </div>
     </section><!-- End Team Section -->
-
-
     <!-- ======= About Section ======= -->
     <section id="about">
       <div class="container" data-aos="fade-up">
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">W210 Capstone Project</h2>
-            <p>As recently as 30 years ago, in the 1990s, studies showed that 
-              most people preferred getting information from others rather than 
-              information retrieval systems. But, of course, most people also used 
+            <h2 class="title">About</h2>
+            <p>As recently as 30 years ago, in the 1990s, studies showed that
+              most people preferred getting information from others rather than
+              information retrieval systems. But, of course, most people also used
               human travel agents to book their travel then too. During the last
-              decade, however, the relentless optimization of information retrieval 
-              systems has increased their effectiveness such that they are now the 
+              decade, however, the relentless optimization of information retrieval
+              systems has increased their effectiveness such that they are now the
               standard for finding information online. Today, the US search market
-              alone is over 100 billion dollars. 
-              
+              alone is over 100 billion dollars.
+
               Information Retrieval is the activity of obtaining material –usually documents–
-              of an unstructured nature –particularly text– which satisfies an information 
-              need from within extensive collections stored on computers. 
-              Information retrieval methods are widely used in many systems, yet, these 
-              systems require the IR method to be fast enough to be used in a live 
-              environment. However, highly performant models are not very efficient 
-              in a production setting. 
+              of an unstructured nature –particularly text– which satisfies an information
+              need from within extensive collections stored on computers.
+              Information retrieval methods are widely used in many systems, yet, these
+              systems require the IR method to be fast enough to be used in a live
+              environment. However, highly performant models are not very efficient
+              in a production setting.
             </p>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="title"><a href="">Goal of the project </a></h4>
-              <p class="description">Our goal is to create a model that increases effectiveness 
-                while decreasing latency through sparse representations. We will 
-                measure effectiveness with Mean Reciprocal Rank (MRR)@k and Recall@k and 
+              <p class="description">Our goal is to create a model that increases effectiveness
+                while decreasing latency through sparse representations. We will
+                measure effectiveness with Mean Reciprocal Rank (MRR)@k and Recall@k and
                 efficiency gains through a decrease in FLOPs.
               </p>
-            </div>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title"><a href="">Motivation</a></h4>
-              <p class="description">Optimizing information retrieval systems by learning sparse representations for documents and queries </p>
-            </div>
+    </section><!-- End About Section -->
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="title"><a href="">DataSet</a></h4>
-              <p class="description">MSMARCO: MS MARCO is a collection of datasets for deep learning related to Search, 
-                with all questions coming from anonymized user queries from Bing. The context passages were extracted 
-                from web documents returned in the search results and summarized by humans. This dataset is a collection 
-                of 8.8 million passages. The small training data consists of 40M triples, and the full training data 
-                consists of 400M triples. We evaluate our model using the official development set contains 101k queries. 
-                55k of those 101k queries are graded to determine performance as reported in this paper.
-              </p>
-            </div>
 
+<!-- ======= Datasets & Models Section ======= -->
+    <section id="Datasets & Models">
+      <div class="container" data-aos="fade-up">
+        <div class="col-lg-6 content order-lg-1 order-2">
+          <h2 class="title">Datasets & Models</h2>
+          <p>As recently as 30 years ago, in the 1990s, studies showed that
+            most people preferred getting information from others rather than
+            information retrieval systems. But, of course, most people also used
+            human travel agents to book their travel then too. During the last
+            decade, however, the relentless optimization of information retrieval
+            systems has increased their effectiveness such that they are now the
+            standard for finding information online. Today, the US search market
+            alone is over 100 billion dollars.
+
+            Information Retrieval is the activity of obtaining material –usually documents–
+            of an unstructured nature –particularly text– which satisfies an information
+            need from within extensive collections stored on computers.
+            Information retrieval methods are widely used in many systems, yet, these
+            systems require the IR method to be fast enough to be used in a live
+            environment. However, highly performant models are not very efficient
+            in a production setting.
+          </p>
+
+            <p>Our goal is to create a model that increases effectiveness
+              while decreasing latency through sparse representations. We will
+              measure effectiveness with Mean Reciprocal Rank (MRR)@k and Recall@k and
+              efficiency gains through a decrease in FLOPs.
+            </p>
+
+
+            <p>
+            Splade is a neural retrieval model which learns query/document sparse expansion
+              via the BERT MLM head and sparse regularization. Splade is an acronym for SParse
+              Lexical AnD Expansion Model for First Stage Ranking. Splade attempts to solve the
+              longstanding vocabulary mismatch problem in information retrieval–wherein documents
+              that do not explicitly contain an exact match of the search terms are not returned–through
+              query expansion. Query expansions enhance queries to obtain hits on more passages/documents.
+            </p>
+
+            <p>
+
+            ColBERT is a ranking model that adapts BERT for efficient retrieval. The ColBERT architecture
+              follows the bi-encoder paradigm where it independently encodes the query and the document
+              using a shared BERT model and then calculates their similarity. Similarity is determined
+              by Late Interaction, which is determined by summing each query embeddings’ maximum
+              similarity score against all document embedding vectors. This process allows ColBERT to
+              pre-compute document representations offline, which speeds up query processing, while
+              retaining momo-encoder’s fine-graining word interactions which is typically lost in
+              bi-encoders.
+
+            </p>
+
+            <p>MSMARCO: MS MARCO is a collection of datasets for deep learning related to Search,
+              with all questions coming from anonymized user queries from Bing. The context passages were extracted
+              from web documents returned in the search results and summarized by humans. This dataset is a collection
+              of 8.8 million passages. The small training data consists of 40M triples, and the full training data
+              consists of 400M triples. We evaluate our model using the official development set contains 101k queries.
+              55k of those 101k queries are graded to determine performance as reported in this paper.
+            </p>
           </div>
 
-          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
         </div>
+
+        <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Experiments Section ======= -->
-    <section id="Experiments">
+
+    <!-- ======= Splade Section ======= style='position: middle'-->
+    <section id="SPLADE">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h3 class="section-title">Experiments</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque</p>
-        </div>
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="534" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Results Section ======= style='position: middle'-->
-    <section id="Results">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h3 class="section-title">Results</h3>
+          <h3 class="section-title">SPLADE Results</h3>
           <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque</p>
             <div class='tableauPlaceholder' id='viz1670123133727'><noscript>
@@ -316,29 +295,86 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
         </div>
-        
+
+
+
+      </div>
+    </section><!-- End Splade Section -->
+
+    <!-- ======= ColBERT Section ======= style='position: middle'-->
+    <section id="ColBERT">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">ColBERT Results</h3>
+          <p>
+              For ColBERT, we explored the effects of pruning on the performance of information retrieval models.
+              There are two types of pruning: structured and unstructured. Structured pruning involves removing
+              entire layers from the model, while unstructured pruning removes individual connections within a
+              layer.
+          </p>>
+
+          <p>
+              Structured pruning reduces the number of parameters in the model, leading to a smaller model
+              size and potentially improved performance. However, it does not introduce sparsity into the model
+              since no weights are actually pruned. Instead, structured pruning is used to optimize the architecture
+              of the model.
+          </p>>
+
+          <p>
+              On the other hand, unstructured pruning removes the least salient connections within a layer,
+              introducing sparsity into the model. The saliency of a connection is typically determined using
+              the magnitude of the weight as a proxy. After pruning, the model is usually retrained to fine-tune
+              the remaining connections. As our goal is to increase the sparsity of the model, we focus on
+              unstructured pruning. We show that even without retraining, pruning can improve performance.
+          </p>>
+
+          <p>
+              We used ColBERT to explore the effects of global unstructured L1 pruning on different modules
+              at various pruning percentages. Our experiment setup uses PyTorch and the HuggingFace
+              Transformers library, and we trained ColBERT using default settings with a batch size of 32
+              and a maximum query length of 32 and document length of 220. We trained the initial model to
+              500k steps on an NVIDIA 3090, and all other models were trained to 80k steps on a single NVIDIA
+              T4 Tensor Core GPU.
+          </p>>
+
+          <p>
+              We applied global unstructured L1 pruning to four different modules of ColBERT: the Feed Forward,
+              Pooler, and final linear layers, as well as the Self-Attention and Attention modules. Our results
+              show two main groupings in terms of performance. The first grouping, which includes the pruning
+              of the Attention and Self-Attention modules, shows a stable increase in performance up to a certain
+              pruning percentage, after which it begins to steadily decrease. The second grouping, which includes
+              the pruning of the other modules, shows slight gains with low levels of pruning, but this increase
+              quickly degrades as the pruning percentage increases, leading to a sharp decrease in performance
+              from 45% to 60%.
+          </p>>
+
+          <p>
+              These results demonstrate the importance of considering the distribution of weight magnitudes
+              when applying global pruning. We found that the dense layers inside the BERT Pooler and final
+              linear layers had a magnitude that was 10 times greater than the other layers, which makes
+              using weight magnitude as a proxy for determining the saliency of connections unreliable.
+              In future work, we plan to observe the effects of pruning all dense layers inside the BERT
+              Encoder and only the BERT Pooler and final linear layer, as well as explore non-global
+              unstructured L1 pruning methods and more dynamic forms of pruning.
+          </p>>
+
+          <p>
+              Additionally, we conducted an extension of our experiment, applying global unstructured L1
+              pruning to the Attention module at different pruning percentages. We observed that across all
+              experiments, introducing even a small amount of pruning into ColBERT resulted in gains in sparsity
+              and performance. In another extension of the experiment, we added L1 regularization to the loss
+              function with various regularization parameters. We found that while weights were lowered, no
+              values were dropped to 0, and the only notable gains were seen with a regularization parameter
+              of 5e-6. Overall, our results show that adding L1 regularization does not significantly increase
+              the sparsity of ColBERT.
+          </p>>
+
+        </div>
+
 
 
       </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Call To Action Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -363,103 +399,194 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/ColBERT_Architecture.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/ColBERT_Architecture.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/Lambda_Table.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/Lambda_Table.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Amount_MRR@10.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Amount_MRR@10.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/Prune_Amount_Recall@100.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/Prune_Amount_Recall@100.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Amount_Recall@1000.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>App 2</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Amount_Recall@200.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/Prune_Amount_Recall@1000.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/Prune_Amount_Recall@1000.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Amount_Recall@50.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 2</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Amount_Recall@50.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Type_MRR@10.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 2</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Type_MRR@10.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Type_Recall@100.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>App 3</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Type_Recall@100.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Type_Recall@1000.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 1</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Type_Recall@1000.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Prune_Type_Recall@200.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Card 3</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Prune_Type_Recall@200.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Relative_Prune_Amount_MRR@10.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/Relative_Prune_Amount_MRR@10.png" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="Relative_Prune_Amount_Recall@100.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="Relative_Prune_Amount_Recall@100.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="Relative_Prune_Amount_Recall@1000.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="Relative_Prune_Amount_Recall@1000.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="Relative_Prune_Amount_Recall@200.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="Relative_Prune_Amount_Recall@200.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="Relative_Prune_Amount_Recall@50.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="Relative_Prune_Amount_Recall@50.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="visualization - 2022-12-04T182616.620.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="visualization - 2022-12-04T182616.620.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Effect of Regularization Parameter on Recall @ K"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
 
         </div>
 
@@ -482,29 +609,23 @@
     <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
         width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-
       <div class="container mt-5">
         <div class="row justify-content-center">
-
           <div class="col-lg-3 col-md-4">
-
             <div class="info">
               <div>
                 <i class="bi bi-geo-alt"></i>
                 <p>A108 Adam Street<br>New York, NY 535022</p>
               </div>
-
               <div>
                 <i class="bi bi-envelope"></i>
                 <p>info@example.com</p>
               </div>
-
               <div>
                 <i class="bi bi-phone"></i>
                 <p>+1 5589 55488 55s</p>
               </div>
             </div>
-
             <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -512,9 +633,7 @@
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-
           </div>
-
           <div class="col-lg-5 col-md-8">
             <div class="form">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -539,9 +658,7 @@
               </form>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>End Contact Section -->
 
@@ -589,3 +706,17 @@
 </body>
 
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
