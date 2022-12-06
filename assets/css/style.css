@@ -1170,3 +1170,10 @@ section {
   font-size: 13px;
   color: #ccc;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

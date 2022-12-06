@@ -56,9 +56,11 @@
           <li><a class="nav-link scrollto" href="#SPLADE">SPLADE</a></li>
           <li><a class="nav-link scrollto " href="#ColBERT">ColBERT</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto " href="#querydeepdive">Query Retrieval</a></li>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
+
     <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
@@ -421,6 +423,7 @@
               <li data-filter=".filter-recall_100">Recall@100</li>
               <li data-filter=".filter-recall_200">Recall@200</li>
               <li data-filter=".filter-recall_1000">Recall@1000</li>
+              <li data-filter=".filter-recall_variability_1000">Variability Recall@1000</li>
             </ul>
           </div>
         </div>
@@ -570,6 +573,15 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-colbert_prune filter-colbert_prune_rel filter-recall_1000 filter-recall_variability_1000">
+            <img src="assets/img/std_pruning_effectsR@1000.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <a href="std_pruning_effectsR@1000.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-colbert-lambda">
             <img src="assets/img/visualization - 2022-12-04T182616.620.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -585,7 +597,64 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= ColBERT Section Query Deep Dive======= style='position: middle'-->
+    <section id="querydeepdive">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">ColBERT Query Retrieval</h3>
+          <img src="assets/img/std_pruning_effectsR@1000.png" alt="Prunning Effects Std  on R@1000" class="center">
+          
+          <p>
+            This figure shows the variability of the top 1k documents ranked given the pruning type. 
+          </p>
+          
+          <p>
+            Notably, after 10% pruning on each variation, the recall for each begins to diverge. For the prune_non_attention_dense variant,
+            recall improves significantly, reaching a recall@1000 of 22.5 before beginning to decline. Recall@1000 on the prune_all variant 
+            begins to rise sharply at 20% pruning. Similarly, recall on the attention_non_dense variant dipped until reaching 20%
+            before beginning to rise, though less sharply than the prune_all variant. Interestingly, the only variant that saw universal
+            declines with increased pruning was the pune_attention variant. Both the prune_all and prune_attention_non_dense variants improved
+            their recall@1000 with more pruning. 
+          </p>
 
+          <p>
+            By looking at the returned passages for a given query, we can see how they retrieve different passages.
+             For example, we posed the query: what is tsh in chemistry to each variant at different pruning levels.
+             This query was obtained by looking at the variability inside R@1000 given the prune type.
+             Meaning that we expect this query to be as variable as possible between models. 
+          </p>
+          <img src="assets/img/5% pruning retrieval.png" alt="Prunning Effects Std  on R@1000" class="center">
+          <p>
+             This table reflects the results of pruning 5% on each variant.
+             We can observe that the returned passage is the same for each variant until we get to the fourth position.
+            There, the variants where attention was pruned diverged from the others. Interestingly, at the fifth position,
+            attention_non_dense and prune_non_attention_dense returned the same passage, with the other variants each returning a distinct passage.
+          </p>
+          <img src="assets/img/20% pruning retrieval.png" alt="Prunning Effects Std  on R@1000 20" class="center">
+          <p>
+            When we prune 20%, we can see that passages start to deviate from the baseline at the second result after
+            the first result. For each of the variants, the first result is the same as the baseline and the second and third results 
+            switch places. For the prune_all variant, we see some repetition as the second result is also returned in the fourth position.
+             Similarly, in the prune_attention variant, the second result is also returned in the fifth position. There was no repetition in results for the attention_non_dense and prune_non_attention_dense variants,
+              and the returned passage for each ranking appropriately answered the question. 
+          </p>
+          <img src="assets/img/45% pruning retrieval.png" alt="Prunning Effects Std  on R@1000 45" class="center">
+          <p>
+            In this table, we see the results of 45% pruning. Notably, prune_attention and prune_attention_non_dense retur
+            n the same passage in the first position as the baseline. For the prune_all variant, we no longer see repetition
+             as we go deeper into the rankings. For the prune_attention variant, we see a repeat of the first returned 
+             passage at the fourth position. However, for the prune_attention_no_dense variant, we see the second and third
+              results repeated. Of note, the prune_non_attention_dense returned the same passage in both the first
+               and fourth positions as well as the second and fifth positions. 
+            That said, the primary difference in the variants beyond repetition is ordering the results. 
+          </p>
+
+        </div>
+
+
+
+      </div>
+    </section><!-- End Query section Section -->
 
     <!-- ======= Contact Section ======= -->
     <!-- <section id="contact">
