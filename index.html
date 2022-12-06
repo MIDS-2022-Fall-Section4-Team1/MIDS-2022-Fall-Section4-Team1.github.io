@@ -623,14 +623,14 @@
              This query was obtained by looking at the variability inside R@1000 given the prune type.
              Meaning that we expect this query to be as variable as possible between models. 
           </p>
-          <img src="assets/img/5% pruning retrieval.png" alt="Prunning Effects Std  on R@1000" class="center">
+          <img src="assets/img/5%pruningretrieval.png" alt="Prunning Effects Std  on R@1000" class="center">
           <p>
              This table reflects the results of pruning 5% on each variant.
              We can observe that the returned passage is the same for each variant until we get to the fourth position.
             There, the variants where attention was pruned diverged from the others. Interestingly, at the fifth position,
             attention_non_dense and prune_non_attention_dense returned the same passage, with the other variants each returning a distinct passage.
           </p>
-          <img src="assets/img/20% pruning retrieval.png" alt="Prunning Effects Std  on R@1000 20" class="center">
+          <img src="assets/img/20%pruningretrieval.png" alt="Prunning Effects Std  on R@1000 20" class="center">
           <p>
             When we prune 20%, we can see that passages start to deviate from the baseline at the second result after
             the first result. For each of the variants, the first result is the same as the baseline and the second and third results 
@@ -638,7 +638,7 @@
              Similarly, in the prune_attention variant, the second result is also returned in the fifth position. There was no repetition in results for the attention_non_dense and prune_non_attention_dense variants,
               and the returned passage for each ranking appropriately answered the question. 
           </p>
-          <img src="assets/img/45% pruning retrieval.png" alt="Prunning Effects Std  on R@1000 45" class="center">
+          <img src="assets/img/45%pruningretrieval.png" alt="Prunning Effects Std  on R@1000 45" class="center">
           <p>
             In this table, we see the results of 45% pruning. Notably, prune_attention and prune_attention_non_dense retur
             n the same passage in the first position as the baseline. For the prune_all variant, we no longer see repetition
