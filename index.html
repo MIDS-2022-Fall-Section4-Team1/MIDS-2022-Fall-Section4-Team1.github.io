@@ -622,14 +622,14 @@
              This query was obtained by looking at the variability inside R@1000 given the prune type.
              Meaning that we expect this query to be as variable as possible between models. 
           </p>
-          <img src="assets/img/5pruningretrieval.png" alt="Prunning Effects Std  on R@1000" class="center">
+          <img src="assets/img/5pruningretrieval.png" alt="Prunning Effects Std on R@1000 5" class="center">
           <p>
              This table reflects the results of pruning 5% on each variant.
              We can observe that the returned passage is the same for each variant until we get to the fourth position.
             There, the variants where attention was pruned diverged from the others. Interestingly, at the fifth position,
             attention_non_dense and prune_non_attention_dense returned the same passage, with the other variants each returning a distinct passage.
           </p>
-          <img src="assets/img/20pruningretrieval.png" alt="Prunning Effects Std  on R@1000 20" class="center">
+          <img src="assets/img/20pruningretrieval.png" alt="Prunning Effects Std on R@1000 20" class="center">
           <p>
             When we prune 20%, we can see that passages start to deviate from the baseline at the second result after
             the first result. For each of the variants, the first result is the same as the baseline and the second and third results 
